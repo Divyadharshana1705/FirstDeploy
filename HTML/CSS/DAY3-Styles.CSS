@@ -1,0 +1,19 @@
+h1{
+
+}
+.clr{
+    color: rgb(65, 123, 7);
+}
+#hey {
+    color:blueviolet;
+    font-size: 90;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;;
+}
+#di{
+    color: #FBBC05;
+}
+*{
+    color: crimson;
+}
