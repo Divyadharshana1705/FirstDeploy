@@ -1,0 +1,17 @@
+h1{
+
+}
+.col{
+    color: deeppink;
+    font-size:70px ;
+    font-style: italic;
+    font-weight: 400;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    text-decoration: underline;
+}
+.p{
+    text-decoration: overline;
+}
+.d{
+    text-decoration: line-through;
+}
