@@ -1,0 +1,43 @@
+.h{text-align: center;
+    font-size: 45px;
+
+}
+.back{
+    background-image: url(https://ik.imagekit.io/4z8covdo9/Full%20stack/todolistbg.png);
+    height: 600px;
+    width:350px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    color: rgb(255, 255, 255,0.8);
+    margin-left: 600px;
+    
+}
+.but{
+    text-align: center;
+}
+.a{
+    text-decoration: underline;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.8);
+   
+    margin-top: 10px;
+}
+.col{
+    background-color: orange;
+    height: 30px;
+    width: 55px;
+    color: rgb(255, 255, 255,0.8);
+    size: 16px; 
+    font-size: 16px; 
+    
+}
+.p1{
+    text-align: center;
+}
+.mar{
+    margin-left: 10px;
+}
