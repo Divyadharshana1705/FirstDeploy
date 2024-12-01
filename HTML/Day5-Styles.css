@@ -1,0 +1,44 @@
+h1{
+
+}
+.backp1{
+    background-image: url(https://ik.imagekit.io/Divs/MERN/bg.jpg);
+    height: 100px;
+    background-color: rgb(222, 135, 221);
+    background-position: 50%;
+    background-size: contain;
+    color: bisque;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    background-color: chartreuse; 
+    border: dotted rgb(165, 42, 56) 5px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+}
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(0, 255, 225); 
+    border: dotted rgb(165, 42, 56) 5px;
+    padding: 10px;
+    margin-left: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.box3{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 28, 164, 0.805); 
+    border: dotted rgb(165, 42, 56) 5px;
+    padding: 10px;
+    margin-left: 80px;
+    margin-top:20px ;
+}
