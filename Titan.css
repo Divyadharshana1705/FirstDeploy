@@ -1,0 +1,172 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+header,
+footer {
+  background-color: #fff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar .logo img {
+  width: 120px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  color: #ff4d4d;
+}
+
+.hero {
+  height: 100vh;
+  background: url("https://via.placeholder.com/1920x1080") no-repeat center
+    center/cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.cta-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 15px 40px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.cta-btn:hover {
+  background-color: #e04444;
+}
+
+/* Product Gallery */
+.product-gallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.product-gallery h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.gallery-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.gallery-item h3 {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.gallery-item p {
+  color: #ff4d4d;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #333;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #ff4d4d;
+}
+
+/* Parallax Scrolling Effect */
+.hero {
+  background-attachment: fixed;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .gallery-container {
+    flex-direction: column;
+  }
+
+  .gallery-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCO GUARD</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #edf6f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background: url('https://source.unsplash.com/1600x900/?coconut,plantation') no-repeat center center/cover;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .hero button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .hero button:hover {
+            background-color: #e6b800;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .hidden {
+            display: none;
+        }
+        .section-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="coco-guard-logo.png" alt="COCO GUARD Logo" width="50">
+            <span style="font-size: 1.5rem; font-weight: bold;">COCO GUARD</span>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#disease-detection">Disease Detection</a></li>
+            <li><a href="#prevention">Prevention</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>COCO GUARD: Smart Coconut Tree Disease Detection</h1>
+        <p>Upload. Detect. Protect.</p>
+        <button onclick="showPage('disease-detection')">Get Started</button>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <img src="how-it-works.jpg" alt="How It Works" class="section-image">
+        <div class="card-container">
+            <div class="card">
+                <h3>Upload an Image</h3>
+                <p>Submit a clear image of the coconut tree.</p>
+            </div>
+            <div class="card">
+                <h3>AI Analysis</h3>
+                <p>Our AI scans for diseases instantly.</p>
+            </div>
+            <div class="card">
+                <h3>Get Results</h3>
+                <p>Receive disease details & prevention tips.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="disease-detection">
+        <h2>Disease Detection</h2>
+        <p>Upload an image to check for coconut tree diseases.</p>
+        <input type="file">
+        <img src="disease-detection.jpg" alt="Disease Detection" class="section-image">
+        <p>Our advanced AI-powered system can detect multiple diseases, including root rot, leaf blight, and fungal infections. Ensure your image is clear and captures the affected region.</p>
+    </section>
+
+    <section id="prevention">
+        <h2>Prevention & Solutions</h2>
+        <p>Learn how to protect coconut trees from diseases using effective agricultural practices.</p>
+        <img src="prevention.jpg" alt="Prevention Methods" class="section-image">
+        <p>Implement organic fertilizers, maintain proper irrigation, and monitor your plantation regularly for early disease detection and treatment.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, email us at <strong>support@cocoguard.com</strong> or call <strong>+91 98765 43210</strong>.</p>
+        <img src="contact.jpg" alt="Contact Us" class="section-image">
+        <p>Visit our support center for more guidance and FAQs regarding coconut tree disease management.</p>
+    </section>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('section').forEach(page => {
+                page.classList.add('hidden');
+            });
+            document.getElementById(pageId).classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCO GUARD</title>
+    <link rel="stylesheet" href="/CSS/workshop.css">
+</head>
+<body>
+
+    <!-- Home Page -->
+    <div id="home">
+        <div class="container">
+            <img src="coconut-tree-logo.png" alt="Coconut Tree Logo" class="logo">
+            <h1>COCO GUARD</h1>
+            <button onclick="goToUpload()">Get Started</button>
+        </div>
+    </div>
+
+    <!-- Upload Page -->
+    <div id="upload" class="hidden">
+        <h2>Upload Image for Disease Detection</h2>
+        <input type="file" id="imageUpload" accept="image/*">
+        <button onclick="predictDisease()">Predict</button>
+        <div id="result"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><b>Support:</b> support@cocoguard.com</p>
+        <p><b>Contact:</b> +91 9876543210</p>
+        <p><b>About Us:</b> COCO GUARD is a deep learning-based coconut tree disease detection system.</p>
+    </footer>
+
+    <script src="workshop.js"></script>
+</body>
+</html>
+

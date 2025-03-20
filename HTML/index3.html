@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCO GUARD</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f4f4f4, #cce3de);
+            color: #333;
+        }
+        nav {
+            background: linear-gradient(to right, #2d6a4f, #40916c);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .logo img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-right: 20px;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        nav ul li a:hover {
+            color: #ffb703;
+        }
+        header {
+            background: url('https://source.unsplash.com/1600x900/?coconut,plantation') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+        header h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        header button {
+            padding: 15px 35px;
+            background: #ffb703;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.3em;
+            border-radius: 15px;
+            transition: 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header button:hover {
+            background: #fb8500;
+        }
+        .content {
+            display: none;
+            padding: 40px;
+            text-align: center;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .active {
+            display: block;
+        }
+        h2 {
+            color: #2d6a4f;
+            font-size: 2.5em;
+        }
+        input[type="file"] {
+            padding: 10px;
+            background: #d8f3dc;
+            border: 2px solid #2d6a4f;
+            border-radius: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        /* Card View Styling */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h3 {
+            color: #2d6a4f;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 1.1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="coco-guard-logo.png" alt="COCO GUARD Logo">
+            <h1 style="color: white; margin: 0; font-size: 1.8em;">COCO GUARD</h1>
+        </div>
+        <ul>
+            <li><a onclick="showPage('home')">Home</a></li>
+            <li><a onclick="showPage('how-it-works')">How It Works</a></li>
+            <li><a onclick="showPage('disease-detection')">Disease Detection</a></li>
+            <li><a onclick="showPage('prevention')">Prevention</a></li>
+            <li><a onclick="showPage('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div id="home" class="content active">
+        <header>
+            <h1>COCO GUARD: Smart Coconut Tree Disease Detection</h1>
+            <p>Upload. Detect. Protect.</p>
+            <button onclick="showPage('disease-detection')">Get Started</button>
+        </header>
+    </div>
+    
+    <div id="how-it-works" class="content">
+        <h2>How It Works</h2>
+        <p>Upload an image of a coconut tree, and our AI will detect any diseases.</p>
+    </div>
+    
+    <div id="disease-detection" class="content">
+        <h2>Disease Detection</h2>
+        <p>Upload an image to check for coconut tree diseases.</p>
+        <input type="file">
+    </div>
+    
+    <div id="prevention" class="content">
+        <h2>Prevention & Solutions</h2>
+        <p>Learn how to protect coconut trees from diseases.</p>
+        <div class="card-container">
+            <div class="card">
+                <h3>Bud Rot</h3>
+                <p><strong>Cause:</strong> Fungus Phytophthora palmivora</p>
+                <p><strong>Prevention:</strong> Use copper-based fungicides and proper drainage.</p>
+            </div>
+            <div class="card">
+                <h3>Leaf Blight</h3>
+                <p><strong>Cause:</strong> Fungal infection from Pestalotiopsis</p>
+                <p><strong>Prevention:</strong> Prune affected leaves and apply fungicide spray.</p>
+            </div>
+            <div class="card">
+                <h3>Stem Bleeding</h3>
+                <p><strong>Cause:</strong> Thielaviopsis paradoxa fungus</p>
+                <p><strong>Prevention:</strong> Avoid wounds on the trunk and use Bordeaux mixture.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact" class="content">
+        <h2>Contact Us</h2>
+        <p>For inquiries, email us at support@cocoguard.com.</p>
+    </div>
+    
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.content').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
