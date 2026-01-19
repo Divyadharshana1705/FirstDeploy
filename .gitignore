@@ -1,0 +1,13 @@
+__pycache__/ 
+*.pyc 
+*.h5 
+*.log 
+*.tmp 
+*.swp 
+env/ 
+venv/ 
+.gradle/ 
+build/ 
+.idea/ 
+*.class 
+*.jar 
